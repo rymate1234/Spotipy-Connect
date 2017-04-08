@@ -1,0 +1,6 @@
+[package]
+name = "spotipy-connect"
+version = "0.1.0"
+authors = ["ryan"]
+
+[dependencies]
