@@ -4,3 +4,16 @@ version = "0.1.0"
 authors = ["ryan"]
 
 [dependencies]
+
+[dependencies.gtk]
+version = "0.1.2"
+features = ["v3_10"]
+
+librespot = { path = "librespot" }
+
+[features]
+default = ["gtk_3_20"]
+gtk_3_10 = ["gtk/v3_10"]
+gtk_3_16 = ["gtk_3_10", "gtk/v3_16"]
+gtk_3_18 = ["gtk_3_16", "gtk/v3_18"]
+gtk_3_20 = ["gtk_3_18", "gtk/v3_20"] 
