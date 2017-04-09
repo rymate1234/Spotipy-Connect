@@ -103,27 +103,42 @@
   <object class="GtkImage" id="image1">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">media-playlist-shuffle</property>
+    <property name="icon_name">media-playlist-shuffle-symbolic</property>
   </object>
   <object class="GtkImage" id="image2">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">media-playlist-repeat</property>
+    <property name="icon_name">media-playlist-repeat-symbolic</property>
   </object>
   <object class="GtkImage" id="image3">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">preferences-other</property>
+    <property name="icon_name">preferences-system-symbolic</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">media-skip-backward-symbolic</property>
+  </object>
+  <object class="GtkImage" id="image5">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">media-playback-start-symbolic</property>
+  </object>
+  <object class="GtkImage" id="image6">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="icon_name">media-skip-forward-symbolic</property>
   </object>
   <object class="GtkImage" id="volDownImg">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">audio-volume-low</property>
+    <property name="icon_name">audio-volume-low-symbolic</property>
   </object>
   <object class="GtkImage" id="volUpImg">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
-    <property name="icon_name">audio-volume-high</property>
+    <property name="icon_name">audio-volume-high-symbolic</property>
   </object>
   <object class="GtkWindow" id="mainWindow">
     <property name="width_request">800</property>
@@ -236,11 +251,11 @@
                 <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton">
-                    <property name="label">gtk-media-previous</property>
+                    <property name="label">Previous</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
+                    <property name="image">image4</property>
                     <property name="image_position">top</property>
                   </object>
                   <packing>
@@ -251,11 +266,11 @@
                 </child>
                 <child>
                   <object class="GtkButton">
-                    <property name="label">gtk-media-play</property>
+                    <property name="label">Play</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
+                    <property name="image">image5</property>
                     <property name="image_position">top</property>
                   </object>
                   <packing>
@@ -266,11 +281,11 @@
                 </child>
                 <child>
                   <object class="GtkButton">
-                    <property name="label">gtk-media-next</property>
+                    <property name="label">Next</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="use_stock">True</property>
+                    <property name="image">image6</property>
                     <property name="image_position">top</property>
                   </object>
                   <packing>
