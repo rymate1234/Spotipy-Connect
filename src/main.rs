@@ -1,10 +1,10 @@
 extern crate gtk;
+extern crate librespot;
 
 mod spotify {
     use gtk;
     use gtk::prelude::*;
     use gtk::{Builder, Button, MessageDialog, Window};
-
 
     pub fn main() {
         if gtk::init().is_err() {
